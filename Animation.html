@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(240, 148, 148) ;
+    border-radius: 10%;
+    box-shadow: 4px 6px 4px 6px gray;
+    border: 10px dotted black;
+    animation-name: myAnimation;
+    animation-duration:5s;
+    animation-direction: alternate;
+    animation-timing-function: 0.5;
+    animation-iteration-count: infinite;
+    /* transform: translateY(30px); */
+}
+.box{
+    height:200px;
+    width: 250px;
+    background-color: violet;
+}
+.bar1{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(119, 18, 214);
+    margin-top: 30px; 
+}
+.bar2{
+      height: 200px;
+      width: 0px;  
+      border: 2px solid black;
+
+    }
+@keyframes myAnimation{
+0%{background-color: red;
+     border-radius:10% ;
+         transform: translateY(600px);
+
+
+}
+25%{background-color: blue;
+     border-radius:25% ;
+     left: 0px;top: 200px;
+
+}
+50%{background-color: blueviolet;
+    border-radius:50% ;
+    left: 200px;top: 100px;
+
+}
+75%{background-color: chocolate;
+    border-radius: 70%; 
+    left: 100px;bottom: 200px;
+
+}
+ 100% {background-color: yellow;  
+    border-radius: 100%;
+    left: 200px;top: 100px;
+    opacity: 0.7;
+ }
+}
+@keyframes myAnimation{
+   
+     100%{
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <div>
+        <div class="box"></div>
+    </div>
+
+
+    <div class="bar1">
+        <div class="bar2"></div>
+    </div>
+</body>
+</html>
